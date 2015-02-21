@@ -54,7 +54,7 @@ public:
 	
 	void			resize(float _resize){ width *= _resize; height *= _resize;};
 	
-	void			update(){video.idleMovie();};
+	void			update(){video.update();};
 	void			draw();
 };
 

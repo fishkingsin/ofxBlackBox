@@ -1,0 +1,5 @@
+ofxOsc
+ofxXmlSettings
+ofxBlackBox
+ofxTuio
+ofxMSACore

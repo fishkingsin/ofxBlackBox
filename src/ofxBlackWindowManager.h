@@ -54,8 +54,8 @@ public:
 	ofxBlackWindowManager();
 	
 #ifdef USE_TUIO
-	myTuioClient *	tuioClient;
-	void			setTuioClient (myTuioClient * _tuioClient){tuioClient = _tuioClient;};
+	ofxTuioClient *	tuioClient;
+	void			setTuioClient (ofxTuioClient * _tuioClient){tuioClient = _tuioClient;};
 #endif
 	
 	void			loadSetup(string _filePath);

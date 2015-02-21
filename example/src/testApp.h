@@ -35,7 +35,7 @@ public:
 	void windowResized(int w, int h);
 	
 #ifdef USE_TUIO
-	myTuioClient tuioClient;
+	ofxTuioClient tuioClient;
 	
 	void	tuioAdded(ofxTuioCursor & tuioCursor);
 	void	tuioRemoved(ofxTuioCursor & tuioCursor);

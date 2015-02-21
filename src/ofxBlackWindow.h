@@ -105,8 +105,8 @@ public:
 	
 	//------------------------------------------------ MULTITOUCH (TUIO) 
 #ifdef USE_TUIO
-	myTuioClient * tuioClient;
-	void	setTuioClient (myTuioClient * _tuioClient);
+	ofxTuioClient * tuioClient;
+	void	setTuioClient (ofxTuioClient * _tuioClient);
 	
 	vector<tCursor>	cursorsOnBorder;
 	ofVec2f	oldLoc[3];

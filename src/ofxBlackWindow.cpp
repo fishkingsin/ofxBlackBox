@@ -448,7 +448,7 @@ bool ofxBlackWindow::checkObjects(ofVec2f _loc){
 
 // ------------------------------------------ TUIO events for MultiTouch interaction
 #ifdef USE_TUIO
-void ofxBlackWindow::setTuioClient (myTuioClient * _tuioClient){
+void ofxBlackWindow::setTuioClient (ofxTuioClient * _tuioClient){
 	tuioClient = _tuioClient;
 	
 	// HELP with this in order to be independent from the main.
