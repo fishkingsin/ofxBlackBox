@@ -61,7 +61,13 @@ void testApp::keyPressed(int key){
 }
 
 void testApp::keyboardPressed(string & action){
-	window.objects[window.focusObject]->act += action;
+    if(window.objects.size()>0)
+    {
+        if(window.objects[window.focusObject] != NULL)
+        {
+            window.objects[window.focusObject]->act += action;
+        }
+    }
 }
 
 void testApp::windowPressed(string & action){
