@@ -540,10 +540,10 @@ void ofxBlackWindow::tuioRemoved(ofxTuioCursor &tuioCursor){
 	for (int i = 0; i < cursorsOnBorder.size(); i++ )
 		if (cursorsOnBorder[i].idN == tuioCursor.getSessionId())
 			cursorsOnBorder.erase(cursorsOnBorder.begin()+i);
-	
-	if ( isOver(loc) && (cursorsOnBorder.size() == 0) && (close == false) && (alpha >= 200)) {
-		if ((timer > 2) && (timer <= 15)) close = true;
-		else timer = 1;
-	}
+	//why close on crursor removed?
+//	if ( isOver(loc) && (cursorsOnBorder.size() == 0) && (close == false) && (alpha >= 200)) {
+//		if ((timer > 2) && (timer <= 15)) close = true;
+//		else timer = 1;
+//	}
 }
 #endif
